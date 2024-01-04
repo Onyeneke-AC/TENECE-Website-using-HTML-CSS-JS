@@ -34,30 +34,6 @@ new Swiper("#swipe-serv", {
     }
 });
 
-/*let slider = tns({
-    container: ".serv-man",
-    "slideBy": "3",
-    "speed" : 2000,
-    "nav": true,
-    autoplay: true,
-    controls: true,
-    loop: true,
-    autoplayButtonOutput: false,
-    autoplay:true,
-    autoplayTimeout: 1000,
-    responsive: {
-        768: {
-            items: 3,
-            gutter: 10
-        },
-
-        400: {
-            items: 1
-        }
-        
-    }
-});*/
-
 new Swiper("#swipe", {
     speed: 500,
     centeredSlides: true,
