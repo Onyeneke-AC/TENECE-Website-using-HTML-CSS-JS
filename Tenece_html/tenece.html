@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tenece - Professional Services</title>
 </head>
 <body>
@@ -17,18 +16,12 @@
     <header class="header">
         <div class="head__nav1">
         <div class="head__nav2">    
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <div class="nav__menu">
-            <h5 class="menu">MENU</h5>
-        </div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item home__nav">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="nav__item dropdown">
+            <nav class="nav" id="nav">
+                <div id="nav__list" class="nav__list">
+                    <button class="closebtn" onclick="closeNav()"> <span class="times">&times;</span>CLOSE</button>
+
+                <a href="#home" class="nav__item home__nav">Home</a>
+                <div class="nav__item dropdown">
                     <a href="#about" class="dropbtn">
                         About Us
                         <img src="./FontAwesomeicon-caret-down.png" class="rot">
@@ -47,17 +40,11 @@
                             Careers
                         </a>
                     </div>
-                </li>
-                <li class="nav__item">
-                    <a href="#home">Products & Services</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#home" class="nav__link">Partners</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#home" class="nav__link">Clients</a>
-                </li>
-                <li class="nav__item dropdown">
+                </div>
+                    <a href="#home" class="nav__item">Products & Services</a>
+                    <a href="#home" class="nav__item">Partners</a>
+                    <a href="#home" class="nav__item">Clients</a>
+                <div class="nav__item dropdown">
                     <a href="#media" class="dropbtn">
                         Media
                         <img src="./FontAwesomeicon-caret-down.png" class="rot">
@@ -70,12 +57,14 @@
                             Blog
                         </a>
                     </div>
-                </li>
-                <li class="nav__item">
-                    <a href="#home">Contact Us</a>
-                </li>
-            </ul>
+                </div>
+                <a href="#home" class="nav__item">Contact Us</a>
+            </div>
         </nav>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars des"></i>
+            MENU
+        </a>
             <div class="lang">
                 <a href="#english" class="lang--link">
                     <div><img src="./Link → en.png.png" alt="english" class="lang--img" height="18" width="24"></div>
