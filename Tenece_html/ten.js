@@ -110,3 +110,12 @@ const brands = document.querySelector('ul.brands'),
         for (let i = 0; i < total_news; i++){
             news_brands.appendChild(news_brands.children[i].cloneNode(true));
         }
+
+function openNav(){
+    document.getElementById("nav__list").style.width = "30%";
+}
+
+function closeNav(){
+    document.getElementById("nav__list").style.width = "0";
+}
+
