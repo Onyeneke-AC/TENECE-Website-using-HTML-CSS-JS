@@ -17,7 +17,6 @@ new Swiper("#swipe-serv", {
                 delay: 3000,
                 disableInInteraction: false
             },
-            //autoplayResume: true,
         },
         770: {
             slidesPerView: 1,
@@ -26,10 +25,8 @@ new Swiper("#swipe-serv", {
                 delay: 3000,
                 disableInInteraction: false
             },
-            //autoplayResume: true,
         },
         771: {
-            //autoplayPause: false,
         }
     }
 });
