@@ -34,7 +34,7 @@ new Swiper("#swipe-serv", {
 new Swiper("#swipe", {
     speed: 500,
     centeredSlides: true,
-    spaceBetween: 35,
+    spaceBetween: 36,
     effect: 'slide',
     slidesPerView: 4,
     slidesPerGroup: 4,
